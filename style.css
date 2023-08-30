@@ -4,7 +4,7 @@
 }
 body {
   margin: 0;
-  }
+}
 
 h2 {
   font-size: 3rem;
@@ -39,50 +39,52 @@ a:link {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 826px){
- .grid-container{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(139, 117, 117);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 1.5rem;
   font-weight: 600;
-  gap: 25px;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: wrap;
- }
- .grid-item {
-  font-size: 2rem;
-}
-h2{
-  font-size: 2rem;
-}
-}
-img {
-  height: 175px;
-  border-radius: 50%;
-}
+  font-family: "Gill Sans", Calibri;
+  top: px;
 }
 
-@media screen and (max-width: 684px){
-  .grid-container{
-    background-color: aqua;
-   display: grid;
-   grid-template-columns: auto auto auto auto auto;
-   font-weight: 400;
-   gap: 20px;
-   justify-content: space-around;
-   display: flex;
-   flex-wrap: wrap;
+@media screen and (max-width: 826px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-weight: 600;
+    gap: 25px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
   }
   .grid-item {
-   font-size: 1.5rem;
- }
- h2{
-   font-size: 1.5rem;
- }
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }
-img {
-  height: 150px;
-  border-radius: 50%;
+
+@media screen and (max-width: 684px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-weight: 400;
+    gap: 20px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-item {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
- }
- 
