@@ -1,0 +1,53 @@
+* {
+  background-color: rgb(223, 212, 199);
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", Calibri;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-weight: 200;
+  gap: 2rem;
+}
+
+.flex-item {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#main p {
+  font-size: 2rem;
+  color: rgb(179, 64, 30);
+}
+
+
+#footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(139, 117, 117);
+  
+}
+
+#footer img {
+  height: 50px;
+}
