@@ -1,53 +1,70 @@
 * {
-  background-color: rgb(223, 212, 199);
-  margin-top: 10px;
+  background-color: rgb(235, 207, 172);
 }
-
 body {
   margin: 0;
   font-family: "Gill Sans", Calibri;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  font-weight: 200;
-  gap: 2rem;
-}
-
-.flex-item {
-  font-size: 1.5rem;
-  font-weight: bold;
+div a {
+  background-color: rgb(160, 133, 182);
+  margin: 0px;
 }
 
 a:link {
   text-decoration: none;
 }
 
-#main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+a:hover {
+  color: rgb(255, 0, 13);
 }
 
-#main p {
-  font-size: 2rem;
-  color: rgb(179, 64, 30);
+img {
+  height: 50px;
+  margin: 0px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 25px;
 
-#footer {
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: row;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+}
+
+.grid-footer {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgb(139, 117, 117);
-  
+  background-color: red;
+  height: 2rem;
+}
+.grid-footer a {
+  background-color: red;
 }
 
-#footer img {
-  height: 50px;
+.grid-header {
+  background-color: rgb(160, 133, 182);
+  height: 2rem;
 }
