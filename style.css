@@ -1,90 +1,100 @@
 * {
-  background-color: rgb(223, 212, 199);
-  margin-top: 10px;
-}
-body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  font-family: "Gill Sans", Calibri;
-  color: rgb(202, 100, 31);
-  margin: 5px;
+/* Styling the header and navigation bar */
+header {
+  background-color: #071952;
+  color: #fff;
 }
-img {
-  height: 200px;
-  border-radius: 50%;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto 230px;
-  font-weight: 600;
-  gap: 30px;
-  justify-content: space-around;
+
+nav ul {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-}
-.grid-item {
-  font-size: 2.5rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
 }
 
-a:link {
+nav a {
   text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-.center-piece {
-  text-align: center;
-  margin-top: 50px;
+/* Styling the main content area */
+main {
+  padding: 20px;
 }
 
+/* Styling the footer */
 footer {
+  background-color: #35a29f;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgb(139, 117, 117);
-  color: white;
-  text-align: center;
-  padding: 30px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: "Gill Sans", Calibri;
-  top: px;
+  font-size: 1.3rem;
 }
 
-@media screen and (max-width: 826px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    font-weight: 600;
-    gap: 25px;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .grid-item {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 2rem;
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+footer li {
+  margin: 0 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Main Section Animination*/
+
+/* Styling for the typewriter animation */
+.typewriter {
+  text-align: center; 
+  font-size: 3rem;
+  font-weight: bold;
+  color: #830606;
+  position: absolute; /* Position the text */
+  top: 50%; /* Move text vertically to the center */
+  left: 50%; /* Move text horizontally to the center */
+  transform: translate(-50%, -50%); /* Center text perfectly */
+
+  overflow: hidden;
+  white-space: wrap;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
   }
 }
 
-@media screen and (max-width: 684px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    font-weight: 400;
-    gap: 20px;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
-  .grid-item {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.5rem;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  footer {
+    position: fixed;
   }
 }
