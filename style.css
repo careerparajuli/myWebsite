@@ -74,7 +74,7 @@ footer a {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: black;
+  color: blue;
   position: absolute; /* Position the text */
   top: 50%; /* Move text vertically to the center */
   left: 50%; /* Move text horizontally to the center */
