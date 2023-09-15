@@ -13,7 +13,7 @@ function typeWriter(text, i) {
   }
 }
 
-// Start the typing animation when the page loads
+// Starting the typing animation when the page loads
 window.onload = function () {
   typeWriter(text, 0);
 };

@@ -32,6 +32,10 @@ nav a {
   font-size: 1.3rem;
 }
 
+nav a:hover {
+  color: #c90f0f;
+}
+
 /* Styling the main content area */
 main {
   padding: 80px;
@@ -65,6 +69,9 @@ footer a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+footer a:hover {
+  color: #c90f0f;
 }
 
 /*Main Section Animination*/
