@@ -1,19 +1,33 @@
-const text = "Hi!, I am Ujjwal Parajuli, a full stack developer.";
-
+const text = "Hi! I am Ujjwal Parajuli, a full-stack developer.";
 const textContainer = document.getElementById("typewriter-text");
+const yearSpan = document.getElementById("year");
 
-function typeWriter(text, i) {
-  if (i < text.length) {
-    textContainer.innerHTML += text.charAt(i);
-    const audio = new Audio("keyboard_sound.mp3");
-    audio.play();
-    setTimeout(function () {
-      typeWriter(text, i + 1);
-    }, 100); // Adjusting the typing speed here (milliseconds)
+// Typewriter effect
+function typeWriter(text, index = 0) {
+  if (!textContainer) return;
+
+  if (index < text.length) {
+    textContainer.textContent += text.charAt(index);
+    setTimeout(() => typeWriter(text, index + 1), 80); // typing speed
+  } else {
+    // optional small pause + loop or blinking handled via CSS
   }
 }
 
-// Starting the typing animation when the page loads
-window.onload = function () {
-  typeWriter(text, 0);
-};
+// Optional: audio with user interaction if you want
+// const keySound = new Audio("keyboard_sound.mp3");
+// function playKeySound() {
+//   try {
+//     keySound.currentTime = 0;
+//     keySound.play();
+//   } catch (e) {
+//     // ignore if browser blocks autoplay
+//   }
+// }
+
+window.addEventListener("load", () => {
+  typeWriter(text);
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
