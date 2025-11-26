@@ -1,45 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ujjwal Parajuli</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujjwal Parajuli | Full Stack Developer</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="preload" href="keyboard_sound.mp3" as="audio" />
 </head>
-
 <body>
-
+  <!-- Header / Nav -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/experiences.html">Experience</a></li>
-        <li><a href="./pages/skills.html">Skills</a></li>
-        <li><a href="./pages/projects.html">Projects</a></li>
-        <li><a href="./pages/others.html">Other</a></li>
+    <nav class="nav-container">
+      <div class="logo">UP</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <main>
-    <! For javaScript and animation effect-->
-      <div class="typewriter">
-        <p id="typewriter-text"></p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">Full Stack Developer • U.S. Army Reserve IT Specialist</p>
+        <h1 class="hero-title">
+          <span id="typewriter-text"></span>
+        </h1>
+        <p class="hero-summary">
+          U.S. Army Reserve Soldier and full stack developer with experience building user-centric
+          applications and secure solutions in DoD environments. Comfortable across front end,
+          back end, and Microsoft Power Platform, with a strong foundation in Physics and
+          Computer Science and an active Secret security clearance.
+        </p>
+        <div class="hero-actions">
+          <a href="Ujjwal_Parajuli_Resume_2025.pdf" class="btn primary" target="_blank">
+            View Resume
+          </a>
+          <a href="#contact" class="btn secondary">
+            Contact Me
+          </a>
+        </div>
       </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Front-End</h3>
+          <p>HTML5, CSS3, JavaScript, React.js, Bootstrap, jQuery, DOM</p>
+        </article>
+        <article class="card">
+          <h3>Back-End</h3>
+          <p>Node.js, Express.js, MongoDB, Mongoose, RESTful APIs, MySQL</p>
+        </article>
+        <article class="card">
+          <h3>Programming Languages</h3>
+          <p>Java, R, MIPS, C++, ColdFusion</p>
+        </article>
+        <article class="card">
+          <h3>Dev Tools</h3>
+          <p>VS Code, Atom, Postman, Git, GitHub, Eclipse, Jira, Confluence, ClickUp</p>
+        </article>
+        <article class="card">
+          <h3>Microsoft & Power Platform</h3>
+          <p>Power Apps, Power BI, Power Automate, Power Pages, Power Virtual Agents, SharePoint</p>
+        </article>
+        <article class="card">
+          <h3>Languages</h3>
+          <p>Nepali (Native), Hindi (Advanced), English (Advanced), Spanish (Beginner)</p>
+        </article>
+        <article class="card">
+          <h3>Certifications</h3>
+          <p>
+            CompTIA Security+ CE, PL-900 (Power Platform Fundamentals), PL-100 (Power Platform App Maker),
+            Web Development, Windows Operating System Security
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Information Technology Specialist</h3>
+          <h4>U.S. Army Reserve – 558th Signal Company · Maineville, OH</h4>
+          <p class="timeline-dates">Nov 2022 – Present</p>
+          <ul>
+            <li>Administer computer systems and IT networks, including routers, switches, and computing equipment.</li>
+            <li>Implement cybersecurity protocols, manage COMSEC, and enforce network security policies.</li>
+            <li>Support digital management systems and provide IT support to improve operational efficiency.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Web Developer & Programmer (Contractor)</h3>
+          <h4>Air Force Research Laboratory · WPAFB, OH</h4>
+          <p class="timeline-dates">Apr 2024 – Present</p>
+          <ul>
+            <li>Design, develop, and implement web-based solutions in a secure DoD environment.</li>
+            <li>Build low-code solutions using Power Apps, Power BI, Power Pages, Power Automate, and SharePoint.</li>
+            <li>Improve operational efficiency by developing tools and automation for research initiatives.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Full Stack Developer</h3>
+          <h4>Algorizin Inc · New York, NY</h4>
+          <p class="timeline-dates">Oct 2021 – May 2023</p>
+          <ul>
+            <li>Developed and deployed a COVID compliance tracker website for small businesses.</li>
+            <li>
+              Built “FoodRanger”, a full-stack MERN app that increased user engagement and restaurant partnerships.
+            </li>
+            <li>Worked on AI-driven features for fraud reduction, spam filtering, and virtual assistance.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Software Developer (Apprenticeship)</h3>
+          <h4>AIMS Inc · Monroe, LA</h4>
+          <p class="timeline-dates">Jan 2021 – May 2021</p>
+          <ul>
+            <li>Designed and built an Android app for trucking companies and drivers.</li>
+            <li>Implemented barcode scanning, signature capture, and real-time location sharing.</li>
+            <li>Used Java, SQLite, and Here API to enable seamless communication for logistics.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>B.S. in Computer Science</h3>
+          <p>University of Louisiana at Monroe · Monroe, LA</p>
+        </article>
+        <article class="card">
+          <h3>B.S. & Technology in Physics</h3>
+          <p>Tribhuvan University · Kathmandu, Nepal</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">
+        Interested in working together or just want to say hi? Reach out—I'd love to connect.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <a href="mailto:career.parajuli@gmail.com">career.parajuli@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <h3>Phone</h3>
+          <a href="tel:+13072201912">(307) 220-1912</a>
+        </div>
+        <div class="contact-item">
+          <h3>Location</h3>
+          <p>Beavercreek, OH 45434</p>
+        </div>
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/ujjwalparajuli" target="_blank">
+            linkedin.com/in/ujjwalparajuli
+          </a>
+        </div>
+        <div class="contact-item">
+          <h3>GitHub</h3>
+          <a href="https://github.com/ujjwalparajuli" target="_blank">
+            github.com/ujjwalparajuli
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <ul>
-      <li><a href="mailto:career.parajuli@gmail.com " target="_blank">Mail</a></li>
-      <li><a href="https://www.linkedin.com/in/ujjwalparajuli" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/ujjwalparajuli" target="_blank">GitHub</a></li>
-    </ul>
-
-
-    <script src="index.js"></script>
+    <p>© <span id="year"></span> Ujjwal Parajuli • Full Stack Developer</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
